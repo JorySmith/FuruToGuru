@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.subheading {
+  text-align: center;
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.quadrant {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quadrant h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.quadrant ul {
+  padding-left: 20px;
+}
+
+.quadrant ul li {
+  margin-bottom: 8px;
+}
