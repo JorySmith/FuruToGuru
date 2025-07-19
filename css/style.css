@@ -44,3 +44,17 @@ h1 {
 .quadrant ul li {
   margin-bottom: 8px;
 }
+
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+  
+  .grid-container > * {
+    /* Ensure items are at least 90% of viewport width */
+    min-width: 90vw;
+    box-sizing: border-box;
+  }
+}
