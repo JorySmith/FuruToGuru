@@ -32,6 +32,14 @@ h1 {
   margin: 1rem auto;
 }
 
+.disclaimer {
+  max-width: min(90vw, 550px);
+  text-align: center;
+  color: #616161;
+  font-size: 0.9rem;
+  margin: 20px auto;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -58,6 +66,14 @@ h1 {
 
 .quadrant ul li {
   margin-bottom: 8px;
+}
+
+#disclaimer {
+  max-width: min(90vw, 550px);
+  text-align: center;
+  color: #616161;
+  font-size: 0.9rem;
+  margin: 20px auto 100px;
 }
 
 @media (max-width: 768px) {
