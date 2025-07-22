@@ -10,11 +10,26 @@ h1 {
   margin-top: 20px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: 20px;
+}
+
 .subheading {
+  max-width: min(90vw, 550px);
   text-align: center;
   color: #666;
-  font-size: 1.2em;
+  font-size: 1rem;
   margin-bottom: 20px;
+  margin: 1rem auto;
 }
 
 .grid-container {
@@ -45,16 +60,19 @@ h1 {
   margin-bottom: 8px;
 }
 
-
-
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
-  
+
   .grid-container > * {
     /* Ensure items are at least 90% of viewport width */
     min-width: 90vw;
     box-sizing: border-box;
+  }
+
+  .logo {
+    width: 120px; /* Adjust logo size for mobile */
+    height: 120px;
   }
 }
