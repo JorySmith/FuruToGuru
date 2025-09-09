@@ -39,7 +39,7 @@
       href="img/favicon-16x16.png"
     />
   </head>
-  <body>
+  <body class="dark-mode">
     <h1>Furu To Guru Trading</h1>
     <div class="logo-container">
       <img
@@ -58,171 +58,316 @@
     </p>
     <p class="disclaimer"><a href="#disclaimer">Disclaimer</a></p>
 
+    <div class="dark-mode-toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Dark Mode</span>
+    </div>
+
     <div class="grid-container">
       <div class="quadrant">
         <h2>Main Ideas</h2>
         <ul>
-          <li>You gotta do the thing to get good. Playbook examples, backtest, trade plan, trade (sim or real), and AAR.  </li>
-          <li>I'd rather be late and right, than early and wrong. </li>
-          <li>Let the market decide entries and exits, stops and targets </li>
-          <li>Do everything you can to stay in this game. It's all about survival. </li>
-          <li>Don't trade big, or you will blow up. Trade small, stay in the game. </li>
-          <li>Is this trade picture worthy TTF and HTF? If not, don't trade. </li>
-          <li>Trade well, profits follow. Trade the chart, not your emotions. </li>          
-          <li>After action reviews, lessons learned. What'd you see? What'd you do wrong? What'd you do right?</li>
+          <li>
+            You gotta do the thing to get good. Playbook examples, backtest,
+            trade plan, trade (sim or real), and AAR.
+          </li>
+          <li>I'd rather be late and right, than early and wrong.</li>
+          <li>Let the market decide entries and exits, stops and targets</li>
+          <li>
+            Do everything you can to stay in this game. It's all about survival.
+          </li>
+          <li>
+            Don't trade big, or you will blow up. Trade small, stay in the game.
+          </li>
+          <li>
+            Is this trade picture worthy TTF and HTF? If not, don't trade.
+          </li>
+          <li>
+            Trade well, profits follow. Trade the chart, not your emotions.
+          </li>
+          <li>
+            After action reviews, lessons learned. What'd you see? What'd you do
+            wrong? What'd you do right?
+          </li>
           <li>Most attention, news, and option volume. Explosive moves</li>
           <li>Making a bad decision is the greatest problem in trading.</li>
-          <li>Missed a trade? No worries, sim trade it until more info. Get more reps in baby </li>
-          <li>You can't get better if you don't know what you're doing wrong. Use AARs. </li>
-          <li>Should you be looking to buy or sell based on big picture context HTF? Until what level? </li>
-          <li>Not sure? Don't know? Don't trade. Wait for a better trade. </li>        
-          <li>Worried? Scared? Breathe. Let stops or targets decide, not emotions. Size down.</li>
+          <li>
+            Missed a trade? No worries, sim trade it until more info. Get more
+            reps in baby
+          </li>
+          <li>
+            You can't get better if you don't know what you're doing wrong. Use
+            AARs.
+          </li>
+          <li>
+            Should you be looking to buy or sell based on big picture context
+            HTF? Until what level?
+          </li>
+          <li>Not sure? Don't know? Don't trade. Wait for a better trade.</li>
+          <li>
+            Worried? Scared? Breathe. Let stops or targets decide, not emotions.
+            Size down.
+          </li>
           <li>Practice daily, real or sim. Get your reps in.</li>
           <li>Is this a key level's first touch? It usually holds.</li>
           <li>Should you be waiting for a 2nd entry?</li>
-          <li>Near EOD or Friday? DTE days far enough out? </li>
+          <li>Near EOD or Friday? DTE days far enough out?</li>
           <li>About to trade? Where's the stop? Where are the targets?</li>
-          <li>Where is the next explosive trade level?</li>      
+          <li>Where is the next explosive trade level?</li>
           <li>What's a great entry that may fail and trap traders?</li>
           <li>Set alerts and targets, don't stare at PA, it's toxic.</li>
         </ul>
       </div>
-        <div class="quadrant">
+      <div class="quadrant">
         <h2>Technical Analysis (TA)</h2>
         <ul>
-          <li>Logarithmic charts, Update TA at least every 5 bars on ALL timeframes </li>          
-          <li>Update stops and targets on the chart after BOs </li>          
-          <li>Price moves from line to line, OHLC</li>          
-          <li>TLs are the 3 widest points </li>            
-          <li>Sup/res have one touch or the most touches</li>            
-          <li>TLs, bull and bear, current and potential future TLs</li>          
-          <li>DBs DTs, major highs and Lows. Major levels tend 
-            to hold on the first test. </li>  
+          <li>
+            Logarithmic charts, Update TA at least every 5 bars on ALL
+            timeframes
+          </li>
+          <li>Update stops and targets on the chart after BOs</li>
+          <li>Price moves from line to line, OHLC</li>
+          <li>TLs are the 3 widest points</li>
+          <li>Sup/res have one touch or the most touches</li>
+          <li>TLs, bull and bear, current and potential future TLs</li>
+          <li>
+            DBs DTs, major highs and Lows. Major levels tend to hold on the
+            first test.
+          </li>
           <li>Tests, TL BOPB HNS RBO</li>
           <li>Pushes</li>
           <li>Entries</li>
           <li>Stops</li>
-          <li>Practice daily. Get your reps in. Real or sim, bar replay. </li> 
+          <li>Practice daily. Get your reps in. Real or sim, bar replay.</li>
           <li>CVD: Buyers lifting offers vs Sellers hitting the bids</li>
-          <li>Strong moves and big bars usually get 2nd moves</li>          
-          <li>Strong moves and big bars leave orders behind, they get filled during PBs.</li>   
-          <li>A TL or level fails only with a BO close </li>
+          <li>Strong moves and big bars usually get 2nd moves</li>
+          <li>
+            Strong moves and big bars leave orders behind, they get filled
+            during PBs.
+          </li>
+          <li>A TL or level fails only with a BO close</li>
           <li>Wicks do the damage. Closes tell the story.</li>
         </ul>
       </div>
-       <div class="quadrant">
+      <div class="quadrant">
         <h2>Big Picture Context, HTF</h2>
         <ul>
-          <li>News? Massive attention? </li>
-          <li>Big move recently? </li>
-          <li>Great pattern or key level? </li>
-          <li>Overextended? Due for a big trend reversal? </li>         
-          <li>2nd/3rd push? Trend might need 50%-75% retracement before trend resumption </li> 
+          <li>News? Massive attention?</li>
+          <li>Big move recently?</li>
+          <li>Great pattern or key level?</li>
+          <li>Overextended? Due for a big trend reversal?</li>
+          <li>
+            2nd/3rd push? Trend might need 50%-75% retracement before trend
+            resumption
+          </li>
         </ul>
       </div>
       <div class="quadrant">
         <h2>Pattern, TTF</h2>
         <ul>
-          <li>New Trend, Trend Resumption, Trend Reversal, or Trading Range.</li>
-          <li>BOPB HNS DB DT TL test RBO? Or BO fail RBO? Trumps opposite side of these patterns </li>
-          <li>A bull bear TL BO new trend, trust it unless PB to BOPB and HNS fail stop out close or PB test bounce fails at DT DB TL  </li>
-          <li>Bull bear BO spike > strong trend TL >  weaker trend TL </li>
-          <li>Bull bear BO spike close  </li>
-          <li>Bull bear BO spike close PB RBO or wait for PB to test close RBO/2RBO  </li>
-          <li>Bull bear BO close fail stop out  </li>
-          <li>Bull bear TL BO close  </li>        
-          <li>Bull bear TL BO close fail RBO </li>
-          <li>Bull bear TL BO close PB RBO </li>
-          <li>Bull bear TL BO close PB to BOPB HNS RBO DB DT test close RBO/2RBO new trend continuation </li>
-          <li>Bull bear TL BO close Push to DB DT BOPB TL test close RBO/2RBO weaker trend continuation </li>
-          <li>Test RBO/2RBO fails stop out close </li>
-          <li>DB DT BO close </li>
-          <li>TL BOPB HNS DB DT test close bounce failure at DB DT BOPB RBO/2RBO  </li>
-          <li>TL test close RBO/2RBO trend continuation </li>
-          <li>DB DT test close RBO/2RBO trend continuation </li>
-          <li>BOPB test close RBO/2RBO trend continuation </li>
-          <li>HNS or RBO test close RBO/2RBO  </li>
-          <li>PB RC RBO 2RBO 3RBO Wedge reversal  </li>
-          <li>Pattern entry fails stop out close or RBO 2RBO stop out, trapped traders </li>
+          <li>
+            New Trend, Trend Resumption, Trend Reversal, or Trading Range.
+          </li>
+          <li>
+            BOPB HNS DB DT TL test RBO? Or BO fail RBO? Trumps opposite side of
+            these patterns
+          </li>
+          <li>
+            A bull bear TL BO new trend, trust it unless PB to BOPB and HNS fail
+            stop out close or PB test bounce fails at DT DB TL
+          </li>
+          <li>Bull bear BO spike > strong trend TL > weaker trend TL</li>
+          <li>Bull bear BO spike close</li>
+          <li>
+            Bull bear BO spike close PB RBO or wait for PB to test close
+            RBO/2RBO
+          </li>
+          <li>Bull bear BO close fail stop out</li>
+          <li>Bull bear TL BO close</li>
+          <li>Bull bear TL BO close fail RBO</li>
+          <li>Bull bear TL BO close PB RBO</li>
+          <li>
+            Bull bear TL BO close PB to BOPB HNS RBO DB DT test close RBO/2RBO
+            new trend continuation
+          </li>
+          <li>
+            Bull bear TL BO close Push to DB DT BOPB TL test close RBO/2RBO
+            weaker trend continuation
+          </li>
+          <li>Test RBO/2RBO fails stop out close</li>
+          <li>DB DT BO close</li>
+          <li>
+            TL BOPB HNS DB DT test close bounce failure at DB DT BOPB RBO/2RBO
+          </li>
+          <li>TL test close RBO/2RBO trend continuation</li>
+          <li>DB DT test close RBO/2RBO trend continuation</li>
+          <li>BOPB test close RBO/2RBO trend continuation</li>
+          <li>HNS or RBO test close RBO/2RBO</li>
+          <li>PB RC RBO 2RBO 3RBO Wedge reversal</li>
+          <li>
+            Pattern entry fails stop out close or RBO 2RBO stop out, trapped
+            traders
+          </li>
         </ul>
       </div>
       <div class="quadrant">
         <h2>Entries</h2>
-        <ul>         
-          <li>Is this trade picture worthy TTF and HTF? If not, don't trade.</li>
-          <li>I'd rather be late and right, than early and wrong. </li>
-          <li>Is this entry a pattern of yours? No? Then don't trade it. </li>
-          <li>Don't know? Don't trade. Set alerts.  </li>
-          <li>Great TL DT DB BO? What happens if it fails? </li>
-          <li>Limit Close RC RBO 2RBO 2nd Entry 3RBO Wedge </li>
+        <ul>
+          <li>
+            Is this trade picture worthy TTF and HTF? If not, don't trade.
+          </li>
+          <li>I'd rather be late and right, than early and wrong.</li>
+          <li>Is this entry a pattern of yours? No? Then don't trade it.</li>
+          <li>Don't know? Don't trade. Set alerts.</li>
+          <li>Great TL DT DB BO? What happens if it fails?</li>
+          <li>Limit Close RC RBO 2RBO 2nd Entry 3RBO Wedge</li>
           <li>TL/DB/DT/Big bar BO close or PB RBO new trend</li>
-          <li>BO but wait for PB to BOPB HNS RBO DB DT test reversal trend resumption</li>
-          <li>Pattern test or BO fails stops out, trapped traders, because big picture context </li>          
-          <li>Bet on New Trend, Trend Resumption, Trend Reversal, or Trading Range.</li>        
-          <li>Should you be looking to buy or sell here based on big picture context HTF? </li>
-          <li>Should you join the BO or wait for a PB? </li>
-          <li>3rd push RC RBO  </li>      
-          <li>Is this entry a scalp short only because you should be looking to buy? And vice versa </li>
-          <li>Buy at support TLs, Sell at resistance TLs </li>      
+          <li>
+            BO but wait for PB to BOPB HNS RBO DB DT test reversal trend
+            resumption
+          </li>
+          <li>
+            Pattern test or BO fails stops out, trapped traders, because big
+            picture context
+          </li>
+          <li>
+            Bet on New Trend, Trend Resumption, Trend Reversal, or Trading
+            Range.
+          </li>
+          <li>
+            Should you be looking to buy or sell here based on big picture
+            context HTF?
+          </li>
+          <li>Should you join the BO or wait for a PB?</li>
+          <li>3rd push RC RBO</li>
+          <li>
+            Is this entry a scalp short only because you should be looking to
+            buy? And vice versa
+          </li>
+          <li>Buy at support TLs, Sell at resistance TLs</li>
         </ul>
       </div>
       <div class="quadrant">
-        <h2>Stops, Trailed Stops, and Bet Risk </h2>
-        <ul>                  
+        <h2>Stops, Trailed Stops, and Bet Risk</h2>
+        <ul>
           <li>Let stops or targets decide exits, not your emotions</li>
-          <li>If you can't trade small positions, you definitely can't trade big positions </li>
-          <li>Update stops and targets on the chart after BOs </li>            
-          <li>Bet size? Lose what on this trade? Including commissions and fees. Don't trade too big.</li>
+          <li>
+            If you can't trade small positions, you definitely can't trade big
+            positions
+          </li>
+          <li>Update stops and targets on the chart after BOs</li>
+          <li>
+            Bet size? Lose what on this trade? Including commissions and fees.
+            Don't trade too big.
+          </li>
           <li>Prior swing high low</li>
           <li>Prior bar or entry bar high low</li>
-          <li>2nd 3rd Push RC RBO 2RBO or should it just be trailed to swing high low? </li>
-          <li>Big bar close or 2RBO near a target</li>        
-          <li>Where is BOPB HNS high low stop? Not a bounce RBO or HNS 2RBO hold but the actual high low stop?</li>        
-          <li>Trail stop, can always get back in, new swing high low created by a BO </li>
-          <li>Trail to Breakeven or EOD </li>
-          <li>TL test RBO/2RBO </li>
-          <li>TL BO reversal </li>
-          <li>BO spike reversal  </li>
-          <li>Scared? Let stops or targets decide, trade the plan, not emotions </li>
+          <li>
+            2nd 3rd Push RC RBO 2RBO or should it just be trailed to swing high
+            low?
+          </li>
+          <li>Big bar close or 2RBO near a target</li>
+          <li>
+            Where is BOPB HNS high low stop? Not a bounce RBO or HNS 2RBO hold
+            but the actual high low stop?
+          </li>
+          <li>
+            Trail stop, can always get back in, new swing high low created by a
+            BO
+          </li>
+          <li>Trail to Breakeven or EOD</li>
+          <li>TL test RBO/2RBO</li>
+          <li>TL BO reversal</li>
+          <li>BO spike reversal</li>
+          <li>
+            Scared? Let stops or targets decide, trade the plan, not emotions
+          </li>
           <li>Set alerts and targets, don't stare at PA.</li>
-          <li>If not using a hard stop, don't be stingy. Get out. Protect what you have.</li>    
-          <li>Daily loss limits, protect what you have, and stop emotional trading </li>  
+          <li>
+            If not using a hard stop, don't be stingy. Get out. Protect what you
+            have.
+          </li>
+          <li>
+            Daily loss limits, protect what you have, and stop emotional trading
+          </li>
         </ul>
       </div>
       <div class="quadrant">
         <h2>Targets</h2>
         <ul>
-          <li>Update stops and targets on the chart after BOs </li>  
-          <li>OHLC but bias closes. Nearest targets first, not what you hope</li>
-          <li>Key levels: TL DB DT BOPB HNS RBO </li>
+          <li>Update stops and targets on the chart after BOs</li>
+          <li>
+            OHLC but bias closes. Nearest targets first, not what you hope
+          </li>
+          <li>Key levels: TL DB DT BOPB HNS RBO</li>
           <li>Close or RBO near a target</li>
-          <li>Big bar close </li>
-          <li>RC RBO 2RBO 3RBO </li>
+          <li>Big bar close</li>
+          <li>RC RBO 2RBO 3RBO</li>
           <li>2nd 3rd push RC RBO 2RBO</li>
-          <li>Have Patience, let targets or stops decide exits, not your emotions</li>
+          <li>
+            Have Patience, let targets or stops decide exits, not your emotions
+          </li>
           <li>Lock in profits along the way, reduce risk</li>
-          <li>When in doubt, get out most/all at key levels, can always get back in</li>          
+          <li>
+            When in doubt, get out most/all at key levels, can always get back
+            in
+          </li>
         </ul>
       </div>
-       <div class="quadrant">
+      <div class="quadrant">
         <h2>After Action Reviews</h2>
         <ul>
-          <li>Big picture context, pattern, entry, stops, targets, lessons learned</li>
+          <li>
+            Big picture context, pattern, entry, stops, targets, lessons learned
+          </li>
           <li>Worst mistakes:</li>
-          <li>Not trading with big picture context on the TTF. Scalp if not, but focus is the big picture context. </li>
+          <li>
+            Not trading with big picture context on the TTF. Scalp if not, but
+            focus is the big picture context.
+          </li>
           <li>Trading too big, emotional, not the chart</li>
-          <li>Not respecting the stop, stopping out emotionally </li>
-          <li>Not getting out at stop, being stingy with limit orders </li>
+          <li>Not respecting the stop, stopping out emotionally</li>
+          <li>Not getting out at stop, being stingy with limit orders</li>
           <li>Not waiting for big picture context to match up with TTF</li>
-          <li>Not taking a test 2RBO over a bad signal bar even tho it's still a key test 2RBO</li>
+          <li>
+            Not taking a test 2RBO over a bad signal bar even tho it's still a
+            key test 2RBO
+          </li>
         </ul>
       </div>
     </div>
     <p id="disclaimer">
       Disclaimer: Most traders fail. Most traders lose all or most of their
-      money trading. This is not financial advice. This is not a
-      recommendation to buy or sell any security. This is my degenerate trading
-      strategy and journey. Read at your own peril.
+      money trading. This is not financial advice. This is not a recommendation
+      to buy or sell any security. This is my degenerate trading strategy and
+      journey. Read at your own peril. 
     </p>
+
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      // Default to dark mode
+      if (localStorage.getItem("darkMode") === "false") {
+        body.classList.remove("dark-mode");
+        toggle.checked = false;
+      } else {
+        body.classList.add("dark-mode");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", function () {
+        if (this.checked) {
+          body.classList.add("dark-mode");
+          localStorage.setItem("darkMode", "true");
+        } else {
+          body.classList.remove("dark-mode");
+          localStorage.setItem("darkMode", "false");
+        }
+      });
+    </script>
   </body>
 </html>
