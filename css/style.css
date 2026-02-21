@@ -1,3 +1,7 @@
+:root {
+  --brand-teal: #1c94c4;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,6 +12,10 @@ h1 {
   text-align: center;
   color: #333;
   margin-top: 20px;
+}
+
+a {
+  color: var(--brand-teal);
 }
 
 .logo-container {
@@ -68,7 +76,7 @@ h1 {
 
 .quadrant ul li {
   margin-bottom: 8px;
-  line-height: 1.6; 
+  line-height: 1.6;
 }
 
 #disclaimer {
@@ -104,10 +112,13 @@ h1 {
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #ccc;
   border-radius: 24px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -119,7 +130,7 @@ h1 {
   bottom: 3px;
   background-color: white;
   border-radius: 50%;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -150,7 +161,7 @@ body.dark-mode .toggle-label {
 body.dark-mode .quadrant {
   background-color: #232526;
   border-color: #444;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode .subheading,
