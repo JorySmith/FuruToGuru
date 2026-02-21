@@ -43,8 +43,6 @@ a {
 .disclaimer {
   max-width: min(90vw, 550px);
   text-align: center;
-  color: #616161;
-  font-size: 0.9rem;
   margin: 20px auto;
 }
 
@@ -82,7 +80,6 @@ a {
 #disclaimer {
   max-width: min(90vw, 550px);
   text-align: center;
-  color: #616161;
   font-size: 0.9rem;
   margin: 20px auto 100px;
 }
@@ -165,7 +162,6 @@ body.dark-mode .quadrant {
 }
 
 body.dark-mode .subheading,
-body.dark-mode .disclaimer a,
 body.dark-mode #disclaimer {
   color: #b0b0b0;
 }
