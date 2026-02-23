@@ -80,7 +80,7 @@ a {
 #disclaimer {
   max-width: min(90vw, 550px);
   text-align: center;
-  margin: 20px auto 100px;
+  margin: 20px auto;
 }
 
 /* Dark mode toggle switch styles */
