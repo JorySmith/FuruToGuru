@@ -1,7 +1,3 @@
-:root {
-  --brand-teal: #69d4ff;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,7 +11,7 @@ h1 {
 }
 
 a {
-  color: var(--brand-teal);
+  color: #008fc8
 }
 
 .logo-container {
@@ -146,6 +142,10 @@ input:checked + .slider:before {
 body.dark-mode {
   background-color: #181a1b;
   color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #69d4ff
 }
 
 body.dark-mode h1,
