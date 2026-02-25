@@ -11,7 +11,7 @@ h1 {
 }
 
 a {
-  color: #008fc8
+  color: #008fc8;
 }
 
 .logo-container {
@@ -80,8 +80,8 @@ a {
 }
 
 footer {
-  margin: 0 0 20px 0;
-} 
+  margin: 0 0 80px 0;
+}
 
 /* Dark mode toggle switch styles */
 .dark-mode-toggle-container {
@@ -149,7 +149,7 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-  color: #69d4ff
+  color: #69d4ff;
 }
 
 body.dark-mode h1,
