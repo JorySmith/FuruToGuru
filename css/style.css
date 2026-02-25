@@ -79,6 +79,10 @@ a {
   margin: 20px auto;
 }
 
+footer {
+  margin: 0 0 20px 0;
+} 
+
 /* Dark mode toggle switch styles */
 .dark-mode-toggle-container {
   display: flex;
