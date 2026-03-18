@@ -69,7 +69,8 @@ a {
   padding-left: 20px;
 }
 
-.quadrant ul li {
+.quadrant ul li,
+.examples ul li {
   margin-bottom: 8px;
   line-height: 1.6;
 }
