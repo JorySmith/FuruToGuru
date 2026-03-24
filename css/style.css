@@ -36,7 +36,7 @@ a {
   margin: 1rem auto;
 }
 
-.disclaimer {
+.disclaimer-link {
   max-width: min(90vw, 550px);
   text-align: center;
   margin: 20px auto;
@@ -70,12 +70,14 @@ a {
 }
 
 .quadrant ul li,
-.examples ul li {
+.examples ul li,
+.disclaimer ul li {
   margin-bottom: 8px;
   line-height: 1.6;
 }
 
-.examples-grid-container {
+.examples-grid-container,
+.disclaimer-grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -84,7 +86,8 @@ a {
   max-width: 900px;
 }
 
-.examples {
+.examples,
+.disclaimer {
   background-color: white;
   padding: 20px;
   border: 1px solid #ccc;
@@ -98,12 +101,6 @@ a {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-}
-
-#disclaimer {
-  max-width: min(90vw, 550px);
-  text-align: center;
-  margin: 20px auto;
 }
 
 footer {
@@ -186,7 +183,8 @@ body.dark-mode .toggle-label {
 }
 
 body.dark-mode .quadrant,
-body.dark-mode .examples {
+body.dark-mode .examples,
+body.dark-mode .disclaimer {
   background-color: #232526;
   border-color: #444;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
