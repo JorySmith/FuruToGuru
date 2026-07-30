@@ -138,7 +138,7 @@ footer {
   bottom: 0;
   background-color: #ccc;
   border-radius: 24px;
-  transition: 0.4s;
+  transition: background-color 0.4s;
 }
 
 .slider:before {
@@ -146,19 +146,71 @@ footer {
   content: "";
   height: 18px;
   width: 18px;
-  left: 3px;
+  left: 50%;
   bottom: 3px;
-  background-color: white;
   border-radius: 50%;
-  transition: 0.4s;
+  transition:
+    transform 0.32s,
+    background 0.32s,
+    box-shadow 0.32s,
+    opacity 0.32s;
+  transform: translateX(-50%);
+  /* Default: crescent moon (when toggle is unchecked = light mode per script mapping) */
+  background: #f6e607; /* bright moon disc */
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.06),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Additional pseudo-element to shape the crescent by masking the bright disc when checked */
+.slider:after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  bottom: 6px;
+  border-radius: 50%;
+  transition:
+    transform 0.32s,
+    background 0.32s,
+    opacity 0.32s;
+  pointer-events: none;
+  /* position mask slightly left to carve a right-facing crescent */
+  transform: translateX(calc(-50% - 4px));
+  /* default: mask visible to carve crescent (mask uses track color) */
+  background: #ccc;
+  opacity: 1;
 }
 
 input:checked + .slider {
   background-color: #333;
 }
 
+/* When checked (dark-mode true): show sun in-place and hide the mask */
 input:checked + .slider:before {
-  transform: translateX(24px);
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle at 50% 45%,
+    #ffd54a 0 55%,
+    #ffb300 56% 100%
+  );
+  /* Sun rays via subtle box-shadows around the knob */
+  box-shadow:
+    0 -10px 0 -6px #ffd54a,
+    0 10px 0 -6px #ffd54a,
+    -10px 0 0 -6px #ffd54a,
+    10px 0 0 -6px #ffd54a,
+    -7px -7px 0 -6px #ffd54a,
+    7px -7px 0 -6px #ffd54a,
+    -7px 7px 0 -6px #ffd54a,
+    7px 7px 0 -6px #ffd54a;
+}
+
+/* hide mask when showing sun */
+input:checked + .slider:after {
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 .toggle-label {
