@@ -195,20 +195,10 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(-50%);
   background: radial-gradient(
-    circle at 50% 45%,
+    circle at 50% 50%,
     #ffd54a 0 55%,
     #ffb300 56% 100%
   );
-  /* Sun rays via subtle box-shadows around the knob */
-  box-shadow:
-    0 -10px 0 -6px #ffd54a,
-    0 10px 0 -6px #ffd54a,
-    -10px 0 0 -6px #ffd54a,
-    10px 0 0 -6px #ffd54a,
-    -7px -7px 0 -6px #ffd54a,
-    7px -7px 0 -6px #ffd54a,
-    -7px 7px 0 -6px #ffd54a,
-    7px 7px 0 -6px #ffd54a;
 }
 
 /* hide mask when showing sun */

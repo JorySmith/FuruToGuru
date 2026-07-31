@@ -1021,13 +1021,16 @@
       const toggle = document.getElementById("darkModeToggle");
       const body = document.body;
 
-      // Default to dark mode
-      if (localStorage.getItem("darkMode") === "false") {
-        body.classList.remove("dark-mode");
-        toggle.checked = false;
-      } else {
+      const storedPreference = localStorage.getItem("darkMode");
+      const shouldUseDarkMode =
+        storedPreference === null ? true : storedPreference === "true";
+
+      if (shouldUseDarkMode) {
         body.classList.add("dark-mode");
         toggle.checked = true;
+      } else {
+        body.classList.remove("dark-mode");
+        toggle.checked = false;
       }
 
       toggle.addEventListener("change", function () {
